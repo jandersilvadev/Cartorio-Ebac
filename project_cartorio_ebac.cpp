@@ -153,7 +153,8 @@ int main(){
 		printf("Escolha a opção desejada no nosso painel: \t\t\n\n");
 		printf("\t1 - Registrar usúario\n");
 		printf("\t2 - Consultar usúario\n");
-		printf("\t3 - Deletar usúario\n\n");
+		printf("\t3 - Deletar usúario\n");
+		printf("\t4 - Sair do sistema\n\n");
 		//Fim do menu
 		
 		//Armazenando a opção do usúario
@@ -175,6 +176,11 @@ int main(){
 			case 3: //Caso a resposta do usuário seja 3 ele irá fazer esse case
 			deletar(); //Chamará a função deletar e fará o que está dentro dela
 			break; //Faz o código parar e não começar o case de baixo sozinho
+			
+			case 4: 
+			printf("Obrigado por utilizar o sistema");
+			return 0; //Retornar valor zero para o sistema e quebrar todos os laços/funções finalizando o programa
+			break;
 			
 			default: //Caso a opção não seja nenhuma das cases informadas ele irá retornar o código abaixo
 			printf("Você digitou uma opção invalida!, tente novamente!\n\n"); //Mensagem enviada para o usuário
